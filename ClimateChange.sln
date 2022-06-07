@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimateChange", "ClimateChange\ClimateChange.csproj", "{38FF57B7-6F77-4531-9608-D643E35DC7D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib", "ClassLib\ClassLib.csproj", "{38997CAB-B745-4A8F-9A4D-6FF82D8D08CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38FF57B7-6F77-4531-9608-D643E35DC7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FF57B7-6F77-4531-9608-D643E35DC7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FF57B7-6F77-4531-9608-D643E35DC7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FF57B7-6F77-4531-9608-D643E35DC7D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38997CAB-B745-4A8F-9A4D-6FF82D8D08CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38997CAB-B745-4A8F-9A4D-6FF82D8D08CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38997CAB-B745-4A8F-9A4D-6FF82D8D08CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38997CAB-B745-4A8F-9A4D-6FF82D8D08CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

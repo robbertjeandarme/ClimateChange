@@ -1,0 +1,109 @@
+﻿<Window x:Class="ClimateChange.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClimateChange"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#abe1fb">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Margin="20 40">
+            <ComboBox 
+                Width="300"
+                  Name="ComboBoxCountries"
+                  VerticalContentAlignment="Center" SelectionChanged="ComboBoxCountries_OnSelectionChanged">
+            </ComboBox>
+        </Viewbox>
+        
+
+        <Image 
+            Grid.Column="1"
+            Margin="0 20 0 0 "
+            Source="/images/ClimateCrisis.jpg" />
+
+
+        <TabControl Grid.Row="1" Grid.ColumnSpan="2">
+
+            
+            <TabItem Header="Overzicht Temperatuur">
+                <Grid Margin="20">
+                    <DataGrid Name="DataGridTempChange">
+                        
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Overzicht Landen">
+                <Grid Margin="20">
+                    <DataGrid Name="DataGridCountries">
+
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Detail">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <ListBox Grid.Column="1" Margin="20" 
+                             Grid.RowSpan="4"
+                             Name="ListBoxTempChange">
+
+                    </ListBox>
+
+                    <Image Name="ImageCountryFlag"
+                           Margin="20"></Image>
+                    <Viewbox Margin="20 10" Grid.Row="1"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Left">
+                        <TextBlock 
+                               Name="TextBlockCountryName"
+                               >name</TextBlock>
+
+                    </Viewbox>
+                    <Viewbox Margin="20 10" Grid.Row="2"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Left">
+                        <TextBlock 
+                               Name="TextBlockCountryRegion"
+                               >region</TextBlock>
+
+                    </Viewbox>
+                    <Viewbox Margin="20 10" Grid.Row="3"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Left">
+                        <TextBlock 
+                               Name="TextBlockCountrySubRegion"
+                               >region</TextBlock>
+
+                    </Viewbox>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Slechtste Jaren na 2000">
+                <Grid Margin="20">
+                    <ListBox Name="ListBoxWorstYears">
+
+                    </ListBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+    </Grid>
+</Window>
